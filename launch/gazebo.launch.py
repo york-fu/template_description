@@ -19,9 +19,9 @@ def resolve_package_path(urdf_str: str) -> str:
 
 
 def generate_launch_description():
-    pkg_name = "robot_description_template"
+    pkg_name = "template_description"
     pkg_share = get_package_share_directory(pkg_name)
-    urdf_file = os.path.join(pkg_share, "urdf", "robot_description_template.urdf")
+    urdf_file = os.path.join(pkg_share, "urdf", "template_description.urdf")
 
     with open(urdf_file, "r") as f:
         urdf_content = f.read()

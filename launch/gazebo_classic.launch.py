@@ -8,11 +8,11 @@ from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
-    pkg_name = 'robot_description_template'
+    pkg_name = 'template_description'
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     pkg_path = get_package_share_directory(pkg_name)
 
-    urdf_file = os.path.join(pkg_path, 'urdf', 'robot_description_template.urdf')
+    urdf_file = os.path.join(pkg_path, 'urdf', 'template_description.urdf')
 
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(

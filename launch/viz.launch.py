@@ -6,8 +6,8 @@ import os
 
 
 def generate_launch_description():
-    pkg_share = FindPackageShare("robot_description_template").find("robot_description_template")
-    urdf_file = os.path.join(pkg_share, "urdf", "robot_description_template.urdf")
+    pkg_share = FindPackageShare("template_description").find("template_description")
+    urdf_file = os.path.join(pkg_share, "urdf", "template_description.urdf")
     rviz_config = os.path.join(pkg_share, "rviz", "viz.rviz")
 
     return LaunchDescription([
